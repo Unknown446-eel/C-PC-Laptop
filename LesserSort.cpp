@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//adding commits to show git repo changes
 
 void printArray(int *ptr, int num);
 void lessersort(int *ptr, int n);
