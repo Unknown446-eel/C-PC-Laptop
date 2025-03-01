@@ -8,3 +8,4 @@ git config --list --show-origin
 git status 			//get status of files in working tree
 git add .				//adds all files in directory to staging area 
 git commit -m "Comment" 	//adds files in staging area to git 
+git pull				//pulls from the git hub
