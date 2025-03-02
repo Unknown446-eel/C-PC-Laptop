@@ -1,0 +1,25 @@
+mk dir "folder name"
+
+cd $HOME/projects/"file_locations"
+code .
+
+
+How to compile and run code:
+
+C: 
+	gcc "file_name.c" -o "exe_file"
+	./"exe_file"
+	
+C++: 
+	g++ -std=c++14 "file_name.cpp" -o "exe_file"
+	./"exe_file"
+
+More Generally:
+	g++ <options> <arguments>
+	where options are: -o, -c, -std=c++14, -Wall, -g, etc
+	where arguments:  main.cpp
+	example 1: g++ -std=c++14 -o main main.cpp lib1.cpp lib2.cpp
+	example 2: g++ -std=c++14 -Wall -c main.cpp
+			g++ -std=c++14 -Wall -c lib1.cpp
+			g++ -std=c++14 -Wall -c lib2.cpp
+			g++ -o main main.o lib1.o lib2.o
