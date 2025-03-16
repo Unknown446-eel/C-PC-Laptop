@@ -1,14 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-//adding commits to show git repo changes
+// adding commits to show git repo changes
 
 void printArray(int *ptr, int num);
 void lessersort(int *ptr, int n);
 
+int main(void)
+{
 
-int main(void){
-
-    int A[] =  {31, 41, 59, 26, 41, 58};
+    int A[] = {31, 41, 59, 26, 41, 58};
 
     printArray(A, 6);
 
@@ -19,24 +19,29 @@ int main(void){
     return 0;
 }
 
-
-void printArray(int *ptr, int num){
+void printArray(int *ptr, int num)
+{
 
     cout << "Elements in Array: ";
 
-    for(int i = 0; i < num; i++){
+    for (int i = 0; i < num; i++)
+    {
         cout << ptr[i] << " ";
     }
     cout << '\n';
 }
 
-void lessersort(int *ptr, int n){
+void lessersort(int *ptr, int n)
+{
     int key = 0;
     int index = 0;
-    for(int i = 0; i<n; i++){
+    for (int i = 0; i < n; i++)
+    {
         index = i;
-        for(int j = i+1; j < n; j++){
-            if( ptr[j] < ptr[index]){
+        for (int j = i + 1; j < n; j++)
+        {
+            if (ptr[j] < ptr[index])
+            {
                 index = j;
             }
         }
@@ -45,4 +50,3 @@ void lessersort(int *ptr, int n){
         ptr[index] = key;
     }
 }
-
