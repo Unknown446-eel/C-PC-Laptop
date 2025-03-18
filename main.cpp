@@ -1,9 +1,8 @@
 #include <iostream>
+#include "extra.h"
 //g++ -std=c++14 -o main main.cpp extra.cpp
 // ./main
 
-
-int getInteger();
 
 int main()
 {
