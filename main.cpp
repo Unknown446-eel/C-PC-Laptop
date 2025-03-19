@@ -1,14 +1,13 @@
 #include <iostream>
 #include "extra.h"
-//g++ -std=c++14 -o main main.cpp extra.cpp
+//g++ -std=c++14 -o main main.cpp extra.h extra.cpp
 // ./main
-
 
 int main()
 {
-	int x{ getInteger() };
-	int y{ getInteger() };
+	int num1{readNumber()}, num2{readNumber()};
+	
+	writeAnswer(num1 + num2);
 
-	std::cout << x << " + " << y << " is " << x + y << '\n';
 	return 0;
 }
