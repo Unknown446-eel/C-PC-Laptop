@@ -1,20 +1,17 @@
 #include <iostream>
 #include "extra.h"
 
-//prompts and reads a user input
+// prompts and reads a user input
 int readNumber()
 {
+	std::cout << "Enter an integer: ";
 	int x;
-	std::cout << "Enter an integer:";
 	std::cin >> x;
 	return x;
-}			
+}
 
-
-//write number to screen
+// write number to screen
 void writeAnswer(int x)
 {
-	std::cout << "Sum of two numbers is:" << x << '\n';
-
-}		
-
+	std::cout << "Sum of two numbers is: " << x << '\n';
+}
