@@ -11,15 +11,19 @@ double userinput(int x)
 		std::cout << "Enter the height of the tower in meters: ";
 		double input{0};
 		std::cin >> input;
+		while(input <= 0 ){
+			std::cout << "Invalid input try again \n";
+			std::cin >> input;
+		}
 		return input;
 	}
 	else
 	{
 		std::cout << "Enter the number of height calculations: ";
-		int input{0};
+		double input{0};
 		std::cin >> input;
 		while(input <= 0 ){
-			std::cout << "Invalid input try again";
+			std::cout << "Invalid input try again \n";
 			std::cin >> input;
 		}
 		return input;
