@@ -5,9 +5,14 @@
 
 int main()
 {
-	int num1{readNumber()}, num2{readNumber()};
-	
-	writeAnswer(num1 + num2);
+	//getting height and datapoints from user
+	double height{userinput(1)}; 
+	double datapoints{userinput(0)};
+
+	//calculating the time it takes ball to height the ground
+	double time{};
+	time = freefalltime(height);
+	printfallheights(height= height, time = time, datapoints = datapoints );
 
 	return 0;
 }
